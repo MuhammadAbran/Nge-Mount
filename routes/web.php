@@ -12,11 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Route::get('profile', 'ProfileController@index')->name('profile.page');
 
 Auth::routes();
 
