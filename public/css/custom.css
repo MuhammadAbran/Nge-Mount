@@ -1,0 +1,287 @@
+.hidden {
+  display: none;
+}
+
+.widget-social {
+  text-align: left;
+}
+
+.widget-social li {
+  display: inline-block;
+}
+
+.widget-social li a {
+  display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 3px 6px;
+    border: 1px solid #978eac;
+    border-radius: 20px;
+    background-color: transparent;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.widget-social li a:hover {
+  color: #212529;
+  border-color: #212529;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.txt-wh {
+  color: white;
+}
+.txt-head {
+	font-family: Poppins;
+	font-weight: 700;
+	font-size: 3.5em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+.txt-1em {
+  font-size: 1em;
+}
+
+.txt-15em {
+  font-size: 1.5em;
+}
+
+.txt-2em {
+  font-size: 2em;
+}
+
+.txt-25em {
+  font-size: 2.5em;
+}
+
+.txt-3em {
+  font-size: 3em;
+}
+
+.txt-35em {
+  font-size: 3.5em;
+}
+
+.txt-4em {
+  font-size: 4em;
+}
+
+.txt-sub {
+  font-family: Poppins;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.txt-bold {
+  font-weight: 700!important;
+}
+
+.txt-sub2 {
+  font-family: Poppins;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.txt-desc {
+  color: #fff;
+  text-align: center;
+}
+
+.mw-250 {
+  max-width: 250px;
+}
+
+.txt-w-75 {
+  width: 75%;
+}
+
+.bg-load {
+  background-color: #515781;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.bg-load img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.bg-blue-main {
+  background-color: #212529;
+}
+
+.txt-blue {
+  color: #1a0f42;
+}
+
+.txt-red {
+  color: #c62525!important;
+}
+
+.txt-bl {
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .hidden {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap_header {
+    height: 60px;
+  }
+  .txt-head {
+    font-size: 2.5em;
+    line-height: 1em;
+  }
+  .txt-sub {
+    font-size: 1.25em;
+  }
+  .txt-desc {
+    font-size: 0.8em;
+  }
+  .txt-w-75 {
+    width: 100%;
+  }
+  .header-fixed .wrap-menu-header {
+    height: 60px;
+  }
+}
+
+body{
+    background-color: #252629;
+}
+
+
+.list_menu {
+	color: #D1B071;
+	/* padding-left: 16px; */
+}
+
+.li-menu{
+	color: white;
+}
+
+.judul-menu{
+	text-align: center;
+	color: #D1B071;
+}
+
+.sub-menu{
+	text-align: center;
+	color: white;
+}
+
+.garis{
+	text-align: center;
+
+}
+
+.text-block{
+	position: absolute;
+	font-size: 12px;
+	left: 4px;
+	bottom: 50px;
+	color: white;
+}
+
+.img-with-text{
+	/* text-align: justify; */
+	position: relative;
+	/* z-index: 1; */
+	top: 0px;
+}
+
+
+.people , .wechat , .newspaper{
+	display: inline-block;
+ 	border-radius: 60px;
+ 	box-shadow: 0px 0px 10px #D1B071;
+ 	padding: 0.5em 0.6em;
+}
+
+.sub-list{
+	color: #252629;
+	-webkit-text-stroke: 1px #D1B071;
+
+}
+
+.gambar{
+	padding-top: 40px;
+}
+.top-center{
+    position: absolute;
+    top: -175px;
+    left : -25px;
+}
+
+.bottom-left {
+	  color: white;
+    position: absolute;
+    bottom: 150px;
+    left: 4px;
+    font-size: 30px;
+}
+
+
+}
+.col-md-1{
+  padding-right: 20px;
+}
+.col-md-3{
+  padding-left: 40px;
+}
+
+@font-face {
+         font-family: "DK Honeyguide Caps";
+         src: url('fonts/DK Honeyguide Caps.otf');
+         }
+
+   .dk {
+         font-family: "DK Honeyguide Caps";
+         }
+@font-face {
+        font-family: "KOMIKAX";
+        src: url('fonts/KOMIKAX.ttf');
+            }
+
+        .komik {
+          font-family: "KOMIKAX";
+          }
+    norwester.otf
+@font-face {
+            font-family: "norwester";
+            src: url('/../fonts/norwester.otf');
+                }
+
+            .norwester {
+              font-family: "norwester";
+              }
