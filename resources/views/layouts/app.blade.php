@@ -19,10 +19,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
     <style>
       .btn-del {
           border: none;
-          background-color: white;
+          background-color: #0B0B0B;
           font-size: 16px;
           cursor: pointer;
           position:absolute;
@@ -37,12 +38,12 @@
       }
     </style>
 </head>
-<body>
+<body class="body" style="background: url('{{ url('/') }}/BG.png');background-size:cover;">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#1C1C1C;box-shadow: 17px 7px 10px;">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                <a href="{{ url('/') }}">
+                  <img src="{{ url('/') }}/img/icon/1.png" alt="IMG-LOGO" data-logofixed="{{ url('/') }}/img/icon/1.png" style="width:200px;padding: 15px 0 15px 0;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -58,35 +59,32 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
-                            <li class="nav-item">
+                            <li class="nav-item" style="font-size:20px;color:white;padding-right:20px;">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" style="font-size:20px;color:white;">
                                 @if (Route::has('register'))
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 @endif
                             </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img src="/uploads/{{ $user->avatar }}" alt="..." style="width:30px;height:30px;border-radius:50%;margin-right: 7px;">
-                                    {{ Auth::user()->username }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="{{ route('profile.page', Auth::user()->id) }}">
-                                      Profile
-                                  </a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                            @else
+                                <li class="nav-item dropdown" style="font-size:20px;">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->username }} <span class="caret"></span>
                                     </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"  style="font-size:20px;">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
                         @endguest
                     </ul>
                 </div>
