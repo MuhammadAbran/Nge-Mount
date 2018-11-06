@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Nge-Mount | Register')
 @section('content')
 <body class="body" style="background: url('{{ url('/') }}/BG.png');background-size:cover;">
 <div class="login">

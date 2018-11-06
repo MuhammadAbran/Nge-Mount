@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Nge-Mount | Login')
 @section('content')
 <!DOCTYPE html>
 <html>
