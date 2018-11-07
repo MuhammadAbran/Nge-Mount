@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nge-Mount | Home</title>
+  </head>
+  <body>
+    <!-- navbar fixed -->
+    <nav>
+
+    </nav>
+
+  </body>
+=======
 <html lang="en">
 
 <!-- Mirrored from universal.sv.ugm.ac.id/v18/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Nov 2018 07:58:02 GMT -->
@@ -973,4 +987,5 @@
 
 </body>
 
+>>>>>>> dc4a1c5a54563895caa8b38deee01863bfa98c50
 </html>

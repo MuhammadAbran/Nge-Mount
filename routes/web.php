@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
 Route::get('profile/{id}/edit', 'ProfileController@edit')->name('profile.page');
 Route::post('profile/{id}', 'ProfileController@update')->name('profile.update');
