@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Nge-Mount</title>
+    <title>Nge-Mount | Home</title>
   </head>
   <body>
     <!-- navbar fixed -->
