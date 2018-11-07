@@ -8,8 +8,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Edit Profile</div>
+            <div class="card" style="background-color: #0B0B0B;color:white;font-size:15px;">
+                <div class="card-header" style="background-color: #070707;font-size:20px;">Edit Profile</div>
 
                 <div class="card-body">
                   <div class="container">
@@ -21,18 +21,18 @@
                           <i class="fas fa-minus-circle"></i>
                       </button>
                     </form>
-                    <br><br>
+                    <br>
                       <form method="POST" action="{{ route('profile.update_avatar', Auth::user()->id) }}" enctype="multipart/form-data">
                           @csrf
                           <div class="custom-file col-md-2" style="margin-left:235px;">
                               <input type="file" class="custom-file-input" name="avatar">
                               <label class="custom-file-label" for="customFile"></label>
                           </div>
-                        <button type="submit" class="btn btn-secondary" style="margin-top:7px;margin-left:3px;">
+                        <button type="submit" class="btn btn-secondary" style="margin-top:3px;margin-left:3px;">
                             Upload
                         </button>
                     </form>
-                    <br><br>
+                    <br>
                   </div>
                   <form method="POST" action="{{ route('profile.update', Auth::user()->id) }}">
                     @csrf
@@ -90,9 +90,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Simpan
-                                </button>
+                                <input type="submit" value="Simpan" class="btn btn-warning">
                             </div>
                         </div>
                     </form>

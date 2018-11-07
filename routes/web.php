@@ -22,6 +22,7 @@ Route::get('profile/{id}/edit', 'ProfileController@edit')->name('profile.page');
 Route::post('profile/{id}', 'ProfileController@update')->name('profile.update');
 Route::post('{id}/profile', 'ProfileController@update_avatar')->name('profile.update_avatar');
 Route::delete('/profile', 'ProfileController@del_avatar')->name('del.avatar');
+Route::get('/admin', 'AdminController@index')->middleware(['role', 'auth']);
 
 
 Auth::routes();
